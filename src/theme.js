@@ -8,5 +8,8 @@ export const theme = {
         snow: "#F2F5F9",
         lightYellow: "#FFF4DF",
     },
-    breakpoint: {},
+    breakpoint: {
+        tablet: 768,
+        mobile: 570,
+    },
 };
