@@ -1,5 +1,6 @@
 import {
   LogoAndMenuWrapper,
+  MenuButton,
   StyledHamburger,
   StyledLogo,
   Menu,
@@ -9,6 +10,9 @@ import {
 export const LogoAndMenu = () => {
   return (
     <LogoAndMenuWrapper>
+      <MenuButton>
+        <StyledHamburger />
+      </MenuButton>
       <StyledLogo />
       <Menu>
         <MenuItem>About</MenuItem>

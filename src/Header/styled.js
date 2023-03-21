@@ -11,7 +11,7 @@ export const StyledHeader = styled.header`
 
 export const Wrapper = styled.div`
   padding: 22px 0;
-  gap: 20px;
+  gap: 30px;
   display: flex;
   max-width: 76.8%;
   width: 100%;
@@ -22,7 +22,8 @@ export const Wrapper = styled.div`
   }
 
   @media(max-width: ${bpMobile}px){
-    width: auto;
+    max-width: 90%;
+    justify-content: center;
   }
 `;
 
