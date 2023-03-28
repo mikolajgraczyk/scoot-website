@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const StyledMenu = styled.div`
+export const StyledMenu = styled.nav`
   display: flex;
   gap: 32px;
   color: white;
