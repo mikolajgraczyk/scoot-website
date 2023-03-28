@@ -11,7 +11,7 @@ export const StyledHeader = styled.header`
 
 export const Wrapper = styled.div`
   padding: 22px 0;
-  gap: 30px;
+  gap: 60px;
   display: flex;
   max-width: 76.8%;
   width: 100%;
@@ -19,6 +19,7 @@ export const Wrapper = styled.div`
 
   @media(max-width: ${bpTablet}px){
     max-width: 95%;
+    gap: 30px;
   }
 
   @media(max-width: ${bpMobile}px){

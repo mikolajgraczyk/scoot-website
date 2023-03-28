@@ -1,24 +1,25 @@
+import Menu from "./Menu";
+import { useSelector, useDispatch } from "react-redux";
+import { selectIsMenuOpen, switchMenuState } from "../menuSlice";
 import {
   LogoAndMenuWrapper,
   MenuButton,
   StyledHamburger,
+  StyledCloseIcon,
   StyledLogo,
-  Menu,
-  MenuItem,
 } from "./styled";
 
 export const LogoAndMenu = () => {
+  const dispatch = useDispatch();
+  const isMenuOpen = useSelector(selectIsMenuOpen);
+
   return (
     <LogoAndMenuWrapper>
-      <MenuButton>
-        <StyledHamburger />
+      <MenuButton onClick={() => dispatch(switchMenuState())}>
+        {isMenuOpen ? <StyledCloseIcon /> : <StyledHamburger />}
       </MenuButton>
       <StyledLogo />
-      <Menu>
-        <MenuItem>About</MenuItem>
-        <MenuItem>Location</MenuItem>
-        <MenuItem>Careers</MenuItem>
-      </Menu>
+      <Menu />
     </LogoAndMenuWrapper>
   );
 };

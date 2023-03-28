@@ -5,11 +5,12 @@ export const theme = {
         darkNavy: "#495567",
         dimGrey: "#939CAA",
         lightGrey: "#E5ECF4",
+        brightGrey: "#333A44",
         snow: "#F2F5F9",
         lightYellow: "#FFF4DF",
     },
     breakpoint: {
         tablet: 768,
-        mobile: 570,
+        mobile: 575,
     },
 };
