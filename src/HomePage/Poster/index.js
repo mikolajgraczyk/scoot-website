@@ -1,7 +1,11 @@
-import { StyledPoster } from "./styled";
+import { StyledPoster, Title } from "./styled";
 
 const Poster = () => {
-  return <StyledPoster></StyledPoster>;
+  return (
+    <StyledPoster>
+      <Title>Scooter sharing made simple</Title>
+    </StyledPoster>
+  );
 };
 
 export default Poster;

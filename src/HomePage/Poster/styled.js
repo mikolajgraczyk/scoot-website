@@ -12,6 +12,7 @@ export const StyledPoster = styled.div`
   background-size: cover;
   width: 100%;
   height: 650px;
+  overflow: hidden;
 
   @media (max-width: ${bpTablet}px) {
     background-image: url(${posterImageTablet});
@@ -20,4 +21,16 @@ export const StyledPoster = styled.div`
   @media (max-width: ${bpMobile}px) {
     background-image: url(${posterImageMobile});
   }
+`;
+
+export const Title = styled.div`
+  color: ${({ theme }) => theme.color.white};
+  max-width: 500px;
+  margin-top: 153px;
+  margin-left: calc(13%);
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
 `;
