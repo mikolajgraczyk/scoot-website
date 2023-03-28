@@ -33,4 +33,16 @@ export const Title = styled.div`
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -2.5px;
+
+  @media (max-width: ${bpTablet}px) {
+    margin: 137px auto;
+    text-align: center;
+  }
+
+  @media (max-width: ${bpMobile}px) {
+    margin: 115px auto;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.78571px;
+  }
 `;
