@@ -18,8 +18,8 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   @media(max-width: ${bpTablet}px){
-    max-width: 95%;
-    gap: 30px;
+    max-width: 89.7%;
+    gap: 20px;
   }
 
   @media(max-width: ${bpMobile}px){

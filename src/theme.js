@@ -10,7 +10,7 @@ export const theme = {
         lightYellow: "#FFF4DF",
     },
     breakpoint: {
-        tablet: 768,
+        tablet: 1200,
         mobile: 575,
     },
 };
