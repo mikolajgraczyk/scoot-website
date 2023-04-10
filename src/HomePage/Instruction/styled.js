@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+import { ReactComponent as LocateIcon } from "./images/LocateIcon.svg";
+import { ReactComponent as RideIcon } from "./images/RideIcon.svg";
+import { ReactComponent as ScooterIcon } from "./images/ScooterIcon.svg";
+
 export const StyledInstruction = styled.div`
   margin-top: 160px;
 
@@ -26,5 +30,26 @@ export const Wrapper = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     margin-top: 120px;
+  }
+`;
+
+export const StyledLocateIcon = styled(LocateIcon)`
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    width: 56px;
+    height: 56px;
+  }
+`;
+
+export const StyledRideIcon = styled(RideIcon)`
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    width: 56px;
+    height: 56px;
+  }
+`;
+
+export const StyledScooterIcon = styled(ScooterIcon)`
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    width: 56px;
+    height: 56px;
   }
 `;

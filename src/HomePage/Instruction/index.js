@@ -1,30 +1,32 @@
-import { StyledInstruction, Wrapper } from "./styled";
+import {
+  StyledInstruction,
+  Wrapper,
+  StyledLocateIcon,
+  StyledRideIcon,
+  StyledScooterIcon,
+} from "./styled";
 import InstructionElement from "./InstructionElement";
-
-import { ReactComponent as LocateIcon } from "./images/LocateIcon.svg";
-import { ReactComponent as RideIcon } from "./images/RideIcon.svg";
-import { ReactComponent as ScooterIcon } from "./images/ScooterIcon.svg";
 
 const Instruction = () => {
   return (
     <StyledInstruction>
       <Wrapper>
         <InstructionElement
-          icon={<LocateIcon />}
+          icon={<StyledLocateIcon />}
           title={"Locate with app"}
           description={
             "Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away."
           }
         />
         <InstructionElement
-          icon={<RideIcon />}
+          icon={<StyledRideIcon />}
           title={"Pick your scooter"}
           description={
             "We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost."
           }
         />
         <InstructionElement
-          icon={<ScooterIcon />}
+          icon={<StyledScooterIcon />}
           title={"Enjoy the ride"}
           description={
             "Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps."
