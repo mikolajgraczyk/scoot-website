@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/scoot-website/static/js/main.74dc673a.js",
+    "static/js/787.6a0461b1.chunk.js": "/scoot-website/static/js/787.6a0461b1.chunk.js",
+    "static/media/posterImageDesktop.jpg": "/scoot-website/static/media/posterImageDesktop.17b79cd68702e7373336.jpg",
+    "static/media/posterImageTablet.jpg": "/scoot-website/static/media/posterImageTablet.9782fddf81b965c8a0b8.jpg",
+    "static/media/posterImageMobile.jpg": "/scoot-website/static/media/posterImageMobile.e7c7b289f92e90f9a94f.jpg",
+    "static/media/Logo.svg": "/scoot-website/static/media/Logo.42fc6419343e828f315aa8cffd1f6906.svg",
+    "static/media/ScooterIcon.svg": "/scoot-website/static/media/ScooterIcon.0dae6273a741b0babad059873fe407fd.svg",
+    "static/media/RideIcon.svg": "/scoot-website/static/media/RideIcon.f50cc97f6a5292c83c79da26fa452e15.svg",
+    "static/media/LocateIcon.svg": "/scoot-website/static/media/LocateIcon.83588de62e38f5f29bbe9a1301b728ff.svg",
+    "index.html": "/scoot-website/index.html",
+    "static/media/WhiteCircles.svg": "/scoot-website/static/media/WhiteCircles.747e8a648a9ebce8c193a062aff296d1.svg",
+    "static/media/RightArrow.svg": "/scoot-website/static/media/RightArrow.dd7044690c0469aff3644a134394d9a3.svg",
+    "static/media/CloseIcon.svg": "/scoot-website/static/media/CloseIcon.e07d444d5c384a92d57126f7e2724926.svg",
+    "static/media/Hamburger.svg": "/scoot-website/static/media/Hamburger.c918095adfed6e886a10eb981bc0131d.svg",
+    "static/media/Line.svg": "/scoot-website/static/media/Line.2fa898a3c6c2a00310d7ebb62a710edc.svg",
+    "main.74dc673a.js.map": "/scoot-website/static/js/main.74dc673a.js.map",
+    "787.6a0461b1.chunk.js.map": "/scoot-website/static/js/787.6a0461b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.74dc673a.js"
+  ]
+}
