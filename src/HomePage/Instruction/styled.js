@@ -19,7 +19,8 @@ export const StyledInstruction = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   gap: 30px;
-  margin-left: 11.5%;
+  justify-content: center;
+  position: relative;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     flex-direction: column;
