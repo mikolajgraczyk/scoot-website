@@ -1,5 +1,6 @@
 import {
   StyledInstruction,
+  Line,
   Wrapper,
   StyledLocateIcon,
   StyledRideIcon,
@@ -32,6 +33,7 @@ const Instruction = () => {
             "Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps."
           }
         />
+        <Line />
       </Wrapper>
     </StyledInstruction>
   );
