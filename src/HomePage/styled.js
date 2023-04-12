@@ -5,6 +5,7 @@ export const StyledHomepage = styled.main``;
 export const Container = styled.div`
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 32px;
 `;
 
 export const Line = styled.div`
@@ -41,5 +42,12 @@ export const AboutSection = styled.section`
 
   @media(max-width: ${({theme}) => theme.breakpoint.tablet}px){
     align-items: center;
+    margin-top: 145px;
+    gap: 128px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin-top: 120px;
+    gap: 120px;
   }
 `;

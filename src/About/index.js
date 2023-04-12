@@ -2,10 +2,10 @@ import {
   StyledAbout,
   Circles,
   ImageCircle,
+  StyledCircle,
   StyledLeftAboutArrow,
   StyledRightAboutArrow,
 } from "./styled";
-import { ReactComponent as Circle } from "./images/Circle.svg";
 import Content from "./Content";
 
 const About = ({ title, description, image, leftDirection }) => {
@@ -14,7 +14,7 @@ const About = ({ title, description, image, leftDirection }) => {
       <Content title={title} description={description} />
       <Circles leftDirection={leftDirection}>
         <ImageCircle src={image} alt="" />
-        <Circle />
+        <StyledCircle />
         <StyledLeftAboutArrow leftDirection={leftDirection} />
         <StyledRightAboutArrow leftDirection={leftDirection} />
       </Circles>

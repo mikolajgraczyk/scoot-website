@@ -21,6 +21,13 @@ export const Title = styled.span`
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     text-align: center;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-family: "Space Mono";
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.42857px;
+  }
 `;
 
 export const Description = styled.p`
@@ -34,6 +41,11 @@ export const Description = styled.p`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     text-align: center;
+    margin-top: 40px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin-top: 32px;
   }
 `;
 
@@ -50,8 +62,12 @@ export const Button = styled.button`
   margin-top: 40px;
   align-self: flex-start;
 
-  @media(max-width: ${({theme}) => theme.breakpoint.tablet}px){
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     align-self: center;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin-top: 32px;
   }
 
   &:hover {
