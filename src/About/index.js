@@ -1,11 +1,11 @@
 import { StyledAbout, Circles, ImageCircle, StyledCircle } from "./styled";
 import Content from "./Content";
 
-const About = ({ title, description, image }) => {
+const About = ({ title, description, image, leftDirection }) => {
   return (
-    <StyledAbout>
+    <StyledAbout leftDirection={leftDirection}>
       <Content title={title} description={description} />
-      <Circles>
+      <Circles leftDirection={leftDirection}>
         <ImageCircle src={image} alt="" />
         <StyledCircle />
       </Circles>
