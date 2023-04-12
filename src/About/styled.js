@@ -8,10 +8,16 @@ export const StyledAbout = styled.div`
   justify-content: right;
   align-items: center;
   justify-content: space-between;
-  margin-right: -344px;
+  margin-right: -360px;
   width: 113.8%;
   max-width: 1855px;
-  gap: 50px;
+  gap: 64px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    flex-direction: column-reverse;
+    margin: 0;
+    align-items: flex-end;
+  }
 
   ${({ leftDirection }) =>
     leftDirection &&
@@ -22,6 +28,10 @@ export const StyledAbout = styled.div`
       margin-left: -344px;
       align-self: flex-start;
       justify-content: space-between;
+
+      @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+        align-self: center;
+      }
     `}
 `;
 
@@ -30,10 +40,19 @@ export const Circles = styled.div`
   gap: 64px;
   position: relative;
 
+  @media(max-width: ${({theme}) => theme.breakpoint.tablet}px){
+    align-self: center;
+    margin-right: -540px;
+  }
+
   ${({ leftDirection }) =>
     leftDirection &&
     css`
       flex-direction: row-reverse;
+
+      @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+        margin-left: -1030px;
+      }
     `}
 `;
 

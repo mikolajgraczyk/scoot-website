@@ -2,16 +2,25 @@ import styled from "styled-components";
 
 export const StyledContent = styled.div`
   max-width: 445px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    align-self: center;
+  }
 `;
 
 export const Title = styled.span`
   font-family: "Space Mono";
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -2.14286px;
   color: ${({ theme }) => theme.color.darkNavy};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    text-align: center;
+  }
 `;
 
 export const Description = styled.p`
@@ -22,6 +31,10 @@ export const Description = styled.p`
   line-height: 25px;
   color: ${({ theme }) => theme.color.dimGrey};
   margin-top: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    text-align: center;
+  }
 `;
 
 export const Button = styled.button`
@@ -35,6 +48,11 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.color.white};
   border: none;
   margin-top: 40px;
+  align-self: flex-start;
+
+  @media(max-width: ${({theme}) => theme.breakpoint.tablet}px){
+    align-self: center;
+  }
 
   &:hover {
     padding: 11px 41px;

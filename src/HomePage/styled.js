@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const StyledHomepage = styled.main``;
 
 export const Container = styled.div`
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
 `;
 
 export const Line = styled.div`
   height: 15px;
-  width: 65%;
+  width: 70%;
   background: ${({ theme }) => theme.color.lightGrey};
   position: absolute;
   left: 0;
@@ -19,7 +19,7 @@ export const Line = styled.div`
     display: none;
   }
 
-  @media (min-width: 1700px) {
+  @media (min-width: 1500px) {
     width: 64%;
   }
 
@@ -38,4 +38,8 @@ export const AboutSection = styled.section`
   align-items: flex-end;
   flex-direction: column;
   gap: 160px;
+
+  @media(max-width: ${({theme}) => theme.breakpoint.tablet}px){
+    align-items: center;
+  }
 `;
