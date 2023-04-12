@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as Circle } from "./images/Circle.svg";
+
+import { ReactComponent as LeftAboutArrow } from "./images/LeftAboutArrow.svg";
+import { ReactComponent as RightAboutArrow } from "./images/RightAboutArrow.svg";
 
 export const StyledAbout = styled.div`
   display: flex;
@@ -9,6 +11,7 @@ export const StyledAbout = styled.div`
   margin-right: -344px;
   width: 113.8%;
   max-width: 1855px;
+  gap: 50px;
 
   ${({ leftDirection }) =>
     leftDirection &&
@@ -25,6 +28,7 @@ export const StyledAbout = styled.div`
 export const Circles = styled.div`
   display: flex;
   gap: 64px;
+  position: relative;
 
   ${({ leftDirection }) =>
     leftDirection &&
@@ -39,4 +43,26 @@ export const ImageCircle = styled.img`
   width: 445px;
 `;
 
-export const StyledCircle = styled(Circle)``;
+export const StyledLeftAboutArrow = styled(LeftAboutArrow)`
+  position: absolute;
+  top: 307px;
+  right: 344px;
+
+  ${({ leftDirection }) =>
+    leftDirection &&
+    css`
+      display: none;
+    `}
+`;
+
+export const StyledRightAboutArrow = styled(RightAboutArrow)`
+  position: absolute;
+  display: none;
+  left: 344px;
+
+  ${({ leftDirection }) =>
+    leftDirection &&
+    css`
+      display: block;
+    `}
+`;
