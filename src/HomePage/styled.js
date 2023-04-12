@@ -6,6 +6,10 @@ export const Container = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    overflow: hidden;
+  }
 `;
 
 export const Line = styled.div`
@@ -40,7 +44,7 @@ export const AboutSection = styled.section`
   flex-direction: column;
   gap: 160px;
 
-  @media(max-width: ${({theme}) => theme.breakpoint.tablet}px){
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     align-items: center;
     margin-top: 145px;
     gap: 128px;
