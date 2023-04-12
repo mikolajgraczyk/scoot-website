@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledContent = styled.div`
-    max-width: 445px;
+  max-width: 445px;
 `;
 
 export const Title = styled.span`
@@ -35,4 +35,12 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.color.white};
   border: none;
   margin-top: 40px;
+
+  &:hover {
+    padding: 11px 41px;
+    color: ${({ theme }) => theme.color.yellow};
+    background: none;
+    cursor: pointer;
+    border: 3px solid ${({ theme }) => theme.color.yellow};
+  }
 `;
