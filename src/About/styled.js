@@ -3,12 +3,19 @@ import { ReactComponent as Circle } from "./images/Circle.svg";
 
 export const StyledAbout = styled.div`
   display: flex;
-  float: right;
+  justify-content: right;
 
   ${({ leftDirection }) =>
     leftDirection &&
     css`
       flex-direction: row-reverse;
+      justify-content: left;
+    `}
+
+  ${({ location }) =>
+    location === "homepage" &&
+    css`
+      margin-top: 160px;
     `}
 `;
 

@@ -4,5 +4,7 @@ export const StyledHomepage = styled.main`
 `;
 
 export const AboutSection = styled.section`
-    margin-top: 200px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 `;
