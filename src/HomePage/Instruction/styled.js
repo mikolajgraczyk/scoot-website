@@ -16,32 +16,6 @@ export const StyledInstruction = styled.div`
   } ;
 `;
 
-export const Line = styled.div`
-  height: 15px;
-  width: 67.5%;
-  background: ${({ theme }) => theme.color.lightGrey};
-  position: absolute;
-  bottom: 235px;
-  left: 0;
-  z-index: -1;
-  
-  @media(max-width: ${({theme}) => theme.breakpoint.tablet}px){
-    display: none;
-  }
-
-  @media(min-width: 1700px){
-    width: 64%;
-  } 
-
-  @media(min-width: 2160px){
-    width: 60%;
-  }
-
-  @media(min-width: 3000px){
-    width: 57%;
-  }
-`;
-
 export const Wrapper = styled.div`
   display: flex;
   gap: 30px;
