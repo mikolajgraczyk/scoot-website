@@ -3,7 +3,7 @@ import Content from "./Content";
 
 const About = ({ title, description, image, leftDirection, location }) => {
   return (
-    <StyledAbout leftDirection={leftDirection} location="homepage">
+    <StyledAbout leftDirection={leftDirection} location={location}>
       <Content title={title} description={description} />
       <Circles leftDirection={leftDirection}>
         <ImageCircle src={image} alt="" />
