@@ -9,8 +9,9 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
     }
 
-    body{
+    html, body{
         margin: 0;
         overflow-x: hidden;
+        max-width: 100%;
     }
 `;
