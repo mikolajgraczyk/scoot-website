@@ -20,6 +20,13 @@ const HomePage = () => {
             "The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app."
           }
         />
+        <About
+          image={nearYou}
+          title={"Coming to a city near you"}
+          description={
+            "Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year."
+          }
+        />
       </AboutSection>
     </StyledHomepage>
   );
