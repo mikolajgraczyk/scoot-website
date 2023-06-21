@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/scoot-website/static/js/main.b484ea53.js",
+    "main.js": "/scoot-website/static/js/main.b95dbd68.js",
     "static/js/787.6a0461b1.chunk.js": "/scoot-website/static/js/787.6a0461b1.chunk.js",
     "static/media/posterImageDesktop.jpg": "/scoot-website/static/media/posterImageDesktop.17b79cd68702e7373336.jpg",
     "static/media/nearYou.jpg": "/scoot-website/static/media/nearYou.72d039db92d9e2a85d7b.jpg",
@@ -12,7 +12,10 @@
     "static/media/ScooterIcon.svg": "/scoot-website/static/media/ScooterIcon.0dae6273a741b0babad059873fe407fd.svg",
     "static/media/RideIcon.svg": "/scoot-website/static/media/RideIcon.f50cc97f6a5292c83c79da26fa452e15.svg",
     "static/media/LocateIcon.svg": "/scoot-website/static/media/LocateIcon.83588de62e38f5f29bbe9a1301b728ff.svg",
+    "static/media/AppStore.svg": "/scoot-website/static/media/AppStore.471f88f95a4035ce5a45296c355f7a43.svg",
+    "static/media/GooglePlay.svg": "/scoot-website/static/media/GooglePlay.80bbf47c6d7172d6bf857d45afe548e6.svg",
     "index.html": "/scoot-website/index.html",
+    "static/media/SemiCircles.svg": "/scoot-website/static/media/SemiCircles.921e5e1c11591a5a4685892751234500.svg",
     "static/media/WhiteCircles.svg": "/scoot-website/static/media/WhiteCircles.747e8a648a9ebce8c193a062aff296d1.svg",
     "static/media/LeftAboutArrow.svg": "/scoot-website/static/media/LeftAboutArrow.f65e5ed8ded2a2acefd1b06c77dd4b08.svg",
     "static/media/RightAboutArrow.svg": "/scoot-website/static/media/RightAboutArrow.dd7044690c0469aff3644a134394d9a3.svg",
@@ -21,10 +24,10 @@
     "static/media/Hamburger.svg": "/scoot-website/static/media/Hamburger.c918095adfed6e886a10eb981bc0131d.svg",
     "static/media/Circle.svg": "/scoot-website/static/media/Circle.f0df9f099504c337a445527503a18288.svg",
     "static/media/Line.svg": "/scoot-website/static/media/Line.2fa898a3c6c2a00310d7ebb62a710edc.svg",
-    "main.b484ea53.js.map": "/scoot-website/static/js/main.b484ea53.js.map",
+    "main.b95dbd68.js.map": "/scoot-website/static/js/main.b95dbd68.js.map",
     "787.6a0461b1.chunk.js.map": "/scoot-website/static/js/787.6a0461b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b484ea53.js"
+    "static/js/main.b95dbd68.js"
   ]
 }
