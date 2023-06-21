@@ -10,9 +10,7 @@ export const StyledAbout = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-right: -360px;
-  width: 113.8%;
-  max-width: 1855px;
-  gap: 64px;
+  width: 116.5%;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     flex-direction: column-reverse;
@@ -90,7 +88,6 @@ export const StyledCircle = styled(Circle)`
 export const StyledLeftAboutArrow = styled(LeftAboutArrow)`
   position: absolute;
   top: 307px;
-  right: 344px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     top: 173px;
@@ -107,7 +104,7 @@ export const StyledLeftAboutArrow = styled(LeftAboutArrow)`
 export const StyledRightAboutArrow = styled(RightAboutArrow)`
   position: absolute;
   display: none;
-  left: 344px;
+  left: 312px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     left: -220px;
