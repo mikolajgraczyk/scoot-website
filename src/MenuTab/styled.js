@@ -20,9 +20,10 @@ export const Tab = styled.div`
     position: absolute;
     background: ${({ theme }) => theme.color.brightGrey};
     width: 68%;
-    height: calc(100vh - 64px);
+    height: 100vh;
     top: 64px;
     left: 0;
+    z-index: 1;
   }
 `;
 
@@ -37,6 +38,6 @@ export const Background = styled.div`
     width: 32%;
     background-color: black;
     opacity: 0.75;
-    height: calc(100vh - 64px);
+    height: 100vh;
   }
 `;

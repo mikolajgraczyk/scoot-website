@@ -1,4 +1,5 @@
 import Menu from "./Menu";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectIsMenuOpen, switchMenuState } from "../menuSlice";
 import {
@@ -12,6 +13,14 @@ import {
 export const LogoAndMenu = () => {
   const dispatch = useDispatch();
   const isMenuOpen = useSelector(selectIsMenuOpen);
+
+  let body = document.querySelector("body");
+
+  useEffect(() => {
+    isMenuOpen
+      ? (body.style.overflow = "hidden")
+      : (body.style.overflow = "scroll");
+  }, [isMenuOpen]);
 
   return (
     <LogoAndMenuWrapper>
