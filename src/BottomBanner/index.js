@@ -1,5 +1,5 @@
 import {
-  StyledFooter,
+  StyledBottomBanner,
   FooterBanner,
   FooterBannerText,
   MobileStoreButtons,
@@ -10,9 +10,9 @@ import {
   Container,
 } from "./styled";
 
-const Footer = () => {
+const BottomBanner = () => {
   return (
-    <StyledFooter>
+    <StyledBottomBanner>
       <FooterBanner>
         <Container>
           <FooterBannerText>Sign up and Scoot off today</FooterBannerText>
@@ -27,8 +27,8 @@ const Footer = () => {
           <StyledSemiCircles />
         </Container>
       </FooterBanner>
-    </StyledFooter>
+    </StyledBottomBanner>
   );
 };
 
-export default Footer;
+export default BottomBanner;

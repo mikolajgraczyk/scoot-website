@@ -3,7 +3,7 @@ import { ReactComponent as SemiCircles } from "./images/SemiCircles.svg";
 import { ReactComponent as AppStore } from "./images/AppStore.svg";
 import { ReactComponent as GooglePlay } from "./images/GooglePlay.svg";
 
-export const StyledFooter = styled.div``;
+export const StyledBottomBanner = styled.div``;
 
 export const FooterBanner = styled.div`
   background-color: ${({ theme }) => theme.color.darkNavy};
