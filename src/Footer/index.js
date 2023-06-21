@@ -3,11 +3,12 @@ import {
   FooterBanner,
   FooterBannerText,
   MobileStoreButtons,
+  StoreButton,
+  StyledAppStore,
+  StyledGooglePlay,
   StyledSemiCircles,
   Container,
 } from "./styled";
-import { ReactComponent as AppStore } from "./images/AppStore.svg";
-import { ReactComponent as GooglePlay } from "./images/GooglePlay.svg";
 
 const Footer = () => {
   return (
@@ -16,8 +17,12 @@ const Footer = () => {
         <Container>
           <FooterBannerText>Sign up and Scoot off today</FooterBannerText>
           <MobileStoreButtons>
-            <AppStore />
-            <GooglePlay />
+            <StoreButton>
+              <StyledAppStore />
+            </StoreButton>
+            <StoreButton>
+              <StyledGooglePlay />
+            </StoreButton>
           </MobileStoreButtons>
           <StyledSemiCircles />
         </Container>
