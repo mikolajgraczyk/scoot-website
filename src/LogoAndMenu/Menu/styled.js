@@ -29,6 +29,11 @@ export const MenuItem = styled.button`
   line-height: 25px;
   color: ${({ theme }) => theme.color.dimGrey};
 
+  &:hover {
+    color: ${({ theme }) => theme.color.yellow};
+    cursor: pointer;
+  }
+
   ${({ location }) =>
     location === "tab" &&
     css`
