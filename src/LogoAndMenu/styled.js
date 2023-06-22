@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as Hamburger } from "./images/Hamburger.svg";
 import { ReactComponent as CloseIcon } from "./images/CloseIcon.svg";
 import { ReactComponent as Logo } from "./images/Logo.svg";
@@ -45,6 +45,12 @@ export const StyledCloseIcon = styled(CloseIcon)`
 `;
 
 export const StyledLogo = styled(Logo)`
+  ${({ location }) =>
+    location &&
+    css`
+      color: ${({ theme }) => theme.color.white};
+    `}
+
   @media (max-width: ${bpMobile}px) {
     width: 75.5px;
     height: 20px;

@@ -10,7 +10,7 @@ import {
   StyledLogo,
 } from "./styled";
 
-export const LogoAndMenu = () => {
+export const LogoAndMenu = ({ location }) => {
   const dispatch = useDispatch();
   const isMenuOpen = useSelector(selectIsMenuOpen);
 
@@ -27,7 +27,7 @@ export const LogoAndMenu = () => {
       <MenuButton onClick={() => dispatch(switchMenuState())}>
         {isMenuOpen ? <StyledCloseIcon /> : <StyledHamburger />}
       </MenuButton>
-      <StyledLogo />
+      <StyledLogo location={location} />
       <Menu />
     </LogoAndMenuWrapper>
   );

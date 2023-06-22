@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <Wrapper>
-        <LogoAndMenu />
+        <LogoAndMenu location="footer"/>
         <SocialMediaButtons>
           <SocialMediaButton>
             <FacebookIcon />
