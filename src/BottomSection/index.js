@@ -10,7 +10,7 @@ import {
   Container,
 } from "./styled";
 
-const BottomBanner = () => {
+const BottomSection = () => {
   return (
     <StyledBottomBanner>
       <FooterBanner>
@@ -31,4 +31,4 @@ const BottomBanner = () => {
   );
 };
 
-export default BottomBanner;
+export default BottomSection;

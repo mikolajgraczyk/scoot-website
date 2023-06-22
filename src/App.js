@@ -1,7 +1,7 @@
 import Header from "./Header";
 import HomePage from "./HomePage";
 import MenuTab from "./MenuTab";
-import BottomBanner from "./BottomBanner";
+import BottomSection from "./BottomSection";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <MenuTab />
       <HomePage />
-      <BottomBanner />
+      <BottomSection />
     </>
   );
 }

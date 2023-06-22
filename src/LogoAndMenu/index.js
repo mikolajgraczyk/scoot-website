@@ -18,8 +18,8 @@ export const LogoAndMenu = () => {
 
   useEffect(() => {
     isMenuOpen
-      ? (body.style.overflow = "hidden")
-      : (body.style.overflow = "scroll");
+      ? (body.style.overflowY = "hidden")
+      : (body.style.overflowY = "scroll");
   }, [isMenuOpen]);
 
   return (
