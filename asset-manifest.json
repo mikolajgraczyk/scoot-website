@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/scoot-website/static/js/main.c45b459f.js",
+    "main.js": "/scoot-website/static/js/main.6fc40e73.js",
     "static/js/787.6a0461b1.chunk.js": "/scoot-website/static/js/787.6a0461b1.chunk.js",
     "static/media/posterImageDesktop.jpg": "/scoot-website/static/media/posterImageDesktop.17b79cd68702e7373336.jpg",
     "static/media/nearYou.jpg": "/scoot-website/static/media/nearYou.72d039db92d9e2a85d7b.jpg",
@@ -8,13 +8,16 @@
     "static/media/payments.jpg": "/scoot-website/static/media/payments.85257289d103aea4f413.jpg",
     "static/media/telemetry.jpg": "/scoot-website/static/media/telemetry.5c5db6a6b17dfc68fc20.jpg",
     "static/media/posterImageMobile.jpg": "/scoot-website/static/media/posterImageMobile.e7c7b289f92e90f9a94f.jpg",
-    "static/media/Logo.svg": "/scoot-website/static/media/Logo.42fc6419343e828f315aa8cffd1f6906.svg",
+    "static/media/Logo.svg": "/scoot-website/static/media/Logo.034ffe428e789f2b5e9cd02af58c0ea4.svg",
     "static/media/ScooterIcon.svg": "/scoot-website/static/media/ScooterIcon.0dae6273a741b0babad059873fe407fd.svg",
     "static/media/RideIcon.svg": "/scoot-website/static/media/RideIcon.f50cc97f6a5292c83c79da26fa452e15.svg",
     "static/media/LocateIcon.svg": "/scoot-website/static/media/LocateIcon.83588de62e38f5f29bbe9a1301b728ff.svg",
     "static/media/AppStore.svg": "/scoot-website/static/media/AppStore.471f88f95a4035ce5a45296c355f7a43.svg",
+    "static/media/Instagram.svg": "/scoot-website/static/media/Instagram.8a1f63c6a3bf21b7ef79fb958f9afeb2.svg",
     "static/media/GooglePlay.svg": "/scoot-website/static/media/GooglePlay.80bbf47c6d7172d6bf857d45afe548e6.svg",
     "index.html": "/scoot-website/index.html",
+    "static/media/Twitter.svg": "/scoot-website/static/media/Twitter.9bc01fbc7d1b64945c1aa7c8aa8ab4b9.svg",
+    "static/media/Facebook.svg": "/scoot-website/static/media/Facebook.82b535a4f5784aa30e57c29c924eaa98.svg",
     "static/media/SemiCircles.svg": "/scoot-website/static/media/SemiCircles.921e5e1c11591a5a4685892751234500.svg",
     "static/media/WhiteCircles.svg": "/scoot-website/static/media/WhiteCircles.747e8a648a9ebce8c193a062aff296d1.svg",
     "static/media/LeftAboutArrow.svg": "/scoot-website/static/media/LeftAboutArrow.f65e5ed8ded2a2acefd1b06c77dd4b08.svg",
@@ -24,10 +27,10 @@
     "static/media/Hamburger.svg": "/scoot-website/static/media/Hamburger.c918095adfed6e886a10eb981bc0131d.svg",
     "static/media/Circle.svg": "/scoot-website/static/media/Circle.f0df9f099504c337a445527503a18288.svg",
     "static/media/Line.svg": "/scoot-website/static/media/Line.2fa898a3c6c2a00310d7ebb62a710edc.svg",
-    "main.c45b459f.js.map": "/scoot-website/static/js/main.c45b459f.js.map",
+    "main.6fc40e73.js.map": "/scoot-website/static/js/main.6fc40e73.js.map",
     "787.6a0461b1.chunk.js.map": "/scoot-website/static/js/787.6a0461b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c45b459f.js"
+    "static/js/main.6fc40e73.js"
   ]
 }
