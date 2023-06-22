@@ -13,10 +13,16 @@ export const Wrapper = styled.div`
   padding: 36px 168px;
   width: 100%;
   justify-content: space-between;
+  gap: 60px;
+
+  @media(max-width: ${({theme}) => theme.breakpoint.tablet}px){
+    padding: 40px 36px;
+  }
 `;
 
 export const SocialMediaButtons = styled.div`
   display: flex;
+  /* gap: 24px; */
   justify-content: space-between;
   width: 120px;
   align-items: center;
