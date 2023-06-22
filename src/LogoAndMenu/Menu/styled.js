@@ -7,6 +7,13 @@ export const StyledMenu = styled.nav`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     display: none;
+
+    ${({ location }) =>
+      location === "footer" &&
+      css`
+        display: grid;
+        gap: 16px;
+      `}
   }
 
   ${({ location }) =>

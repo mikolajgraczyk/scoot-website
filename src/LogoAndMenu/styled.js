@@ -16,6 +16,15 @@ export const LogoAndMenuWrapper = styled.div`
   @media (max-width: ${bpTablet}px) {
     gap: 10px;
   }
+
+  @media (max-width: ${bpMobile}px) {
+    ${({ location }) =>
+      location === "footer" &&
+      css`
+        display: grid;
+        gap: 41px;
+      `}
+  }
 `;
 
 export const MenuButton = styled.button`
@@ -29,6 +38,12 @@ export const MenuButton = styled.button`
     display: flex;
     justify-content: center;
     background: none;
+
+    ${({ location }) =>
+      location === "footer" &&
+      css`
+        display: none;
+      `}
   }
 
   &:hover {
@@ -46,7 +61,7 @@ export const StyledCloseIcon = styled(CloseIcon)`
 
 export const StyledLogo = styled(Logo)`
   ${({ location }) =>
-    location &&
+    location === "footer" &&
     css`
       color: ${({ theme }) => theme.color.white};
     `}
@@ -55,5 +70,12 @@ export const StyledLogo = styled(Logo)`
     width: 75.5px;
     height: 20px;
     margin: 0 auto;
+
+    ${({ location }) =>
+      location === "footer" &&
+      css`
+        width: 107px;
+        height: 28.5px;
+      `}
   }
 `;

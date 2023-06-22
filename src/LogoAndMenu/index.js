@@ -23,12 +23,15 @@ export const LogoAndMenu = ({ location }) => {
   }, [isMenuOpen]);
 
   return (
-    <LogoAndMenuWrapper>
-      <MenuButton onClick={() => dispatch(switchMenuState())}>
+    <LogoAndMenuWrapper location={location}>
+      <MenuButton
+        onClick={() => dispatch(switchMenuState())}
+        location={location}
+      >
         {isMenuOpen ? <StyledCloseIcon /> : <StyledHamburger />}
       </MenuButton>
       <StyledLogo location={location} />
-      <Menu />
+      <Menu location={location} />
     </LogoAndMenuWrapper>
   );
 };

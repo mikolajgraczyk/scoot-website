@@ -7,7 +7,6 @@ export const StyledFooter = styled.footer`
 `;
 
 export const Wrapper = styled.div`
-  height: 96px;
   display: flex;
   max-width: 1440px;
   padding: 36px 168px;
@@ -18,12 +17,18 @@ export const Wrapper = styled.div`
   @media(max-width: ${({theme}) => theme.breakpoint.tablet}px){
     padding: 40px 36px;
   }
+
+  @media(max-width: ${({theme}) => theme.breakpoint.mobile}px){
+    padding: 64px 134px 88px 134px;
+    display: grid;
+    justify-content: center;
+    gap: 85px;
+  }
 `;
 
 export const SocialMediaButtons = styled.div`
   display: flex;
-  /* gap: 24px; */
-  justify-content: space-between;
+  gap: 24px;
   width: 120px;
   align-items: center;
 `;
