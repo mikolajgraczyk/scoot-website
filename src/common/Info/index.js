@@ -8,7 +8,7 @@ import {
 } from "./styled";
 import Content from "./Content";
 
-const About = ({ title, description, image, leftDirection }) => {
+const Info = ({ title, description, image, leftDirection }) => {
   return (
     <StyledAbout leftDirection={leftDirection}>
       <Content title={title} description={description} />
@@ -22,4 +22,4 @@ const About = ({ title, description, image, leftDirection }) => {
   );
 };
 
-export default About;
+export default Info;

@@ -1,7 +1,7 @@
 import Menu from "./Menu";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { selectIsMenuOpen, switchMenuState } from "../menuSlice";
+import { selectIsMenuOpen, switchMenuState } from "../../menuSlice";
 import {
   LogoAndMenuWrapper,
   MenuButton,

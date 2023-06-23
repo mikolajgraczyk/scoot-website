@@ -1,16 +1,23 @@
-import Header from "./Header";
+import Header from "./common/Header";
 import HomePage from "./HomePage";
-import MenuTab from "./MenuTab";
-import BottomSection from "./BottomSection";
+import MenuTab from "./common/MenuTab"
+import BottomSection from "./common/BottomSection";
+import AboutPage from "./AboutPage";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <HashRouter>
       <Header />
       <MenuTab />
-      <HomePage />
+      <Routes>
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="*" element={<Navigate to="/home" />} />
+      </Routes>
       <BottomSection />
-    </>
+    </HashRouter>
   );
 }
 

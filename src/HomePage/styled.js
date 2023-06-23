@@ -36,7 +36,7 @@ export const Line = styled.div`
   }
 `;
 
-export const AboutSection = styled.section`
+export const InfoSection = styled.section`
   margin-top: 200px;
   display: flex;
   align-items: flex-end;

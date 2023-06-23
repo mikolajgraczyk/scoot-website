@@ -1,8 +1,7 @@
-import { StyledHomepage, Container, Line, AboutSection } from "./styled";
+import { StyledHomepage, Container, Line, InfoSection } from "./styled";
 import Poster from "./Poster";
 import Instruction from "./Instruction";
-import About from "../About";
-
+import Info from "../common/Info";
 import telemetry from "./images/telemetry.jpg";
 import nearYou from "./images/nearYou.jpg";
 import payments from "./images/payments.jpg";
@@ -14,8 +13,8 @@ const HomePage = () => {
       <Container>
         <Line />
         <Instruction />
-        <AboutSection>
-          <About
+        <InfoSection>
+          <Info
             image={telemetry}
             title={"Easy to use riding telemetry"}
             description={
@@ -23,7 +22,7 @@ const HomePage = () => {
             }
             location="homepage"
           />
-          <About
+          <Info
             image={nearYou}
             title={"Coming to a city near you"}
             description={
@@ -32,7 +31,7 @@ const HomePage = () => {
             leftDirection
             location="homepage"
           />
-          <About
+          <Info
             image={payments}
             title={"Zero hassle payments"}
             description={
@@ -40,7 +39,7 @@ const HomePage = () => {
             }
             location="homepage"
           />
-        </AboutSection>
+        </InfoSection>
       </Container>
     </StyledHomepage>
   );
