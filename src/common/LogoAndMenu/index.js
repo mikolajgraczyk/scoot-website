@@ -20,7 +20,7 @@ export const LogoAndMenu = ({ location }) => {
   useEffect(() => {
     isMenuOpen
       ? (body.style.overflowY = "hidden")
-      : (body.style.overflowY = "scroll");
+      : (body.style.overflowY = "auto");
   }, [isMenuOpen]);
 
   return (
