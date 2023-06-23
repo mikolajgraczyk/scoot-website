@@ -6,6 +6,10 @@ import aboutBackgroundDesktop from "./images/about-hero-desktop.jpg";
 import aboutBackgroundTablet from "./images/about-hero-tablet.jpg";
 import aboutBackgroundMobile from "./images/about-hero-mobile.jpg";
 
+import careersLocationHeroDesktop from "./images/careers-locations-hero-desktop.jpg";
+import careersLocationHeroTablet from "./images/careers-locations-hero-tablet.jpg";
+import careersLocationHeroMobile from "./images/careers-location-hero-mobile.jpg";
+
 export const StyledTopBanner = styled.div`
   height: 200px;
   padding: 72px 165px;
@@ -33,7 +37,21 @@ export const StyledTopBanner = styled.div`
       }
     `}
 
-  @media(max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+  ${({ location }) =>
+    (location === "locations" || location === "careers") &&
+    css`
+      background-image: url(${careersLocationHeroDesktop});
+
+      @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+        background-image: url(${careersLocationHeroTablet});
+      }
+
+      @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        background-image: url(${careersLocationHeroMobile});
+      }
+    `};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     padding: 72px 97px;
   }
 
