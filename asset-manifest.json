@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/scoot-website/static/js/main.ca29d92f.js",
+    "main.js": "/scoot-website/static/js/main.73cec3f8.js",
     "static/js/787.6a0461b1.chunk.js": "/scoot-website/static/js/787.6a0461b1.chunk.js",
     "static/media/posterImageDesktop.jpg": "/scoot-website/static/media/posterImageDesktop.17b79cd68702e7373336.jpg",
     "static/media/nearYou.jpg": "/scoot-website/static/media/nearYou.72d039db92d9e2a85d7b.jpg",
@@ -9,6 +9,7 @@
     "static/media/telemetry.jpg": "/scoot-website/static/media/telemetry.5c5db6a6b17dfc68fc20.jpg",
     "static/media/posterImageMobile.jpg": "/scoot-website/static/media/posterImageMobile.e7c7b289f92e90f9a94f.jpg",
     "static/media/about-hero-desktop.jpg": "/scoot-website/static/media/about-hero-desktop.4ac10e05b89922117496.jpg",
+    "static/media/careers-locations-hero-desktop.jpg": "/scoot-website/static/media/careers-locations-hero-desktop.4886785f277f5ef12ae7.jpg",
     "static/media/about-hero-tablet.jpg": "/scoot-website/static/media/about-hero-tablet.009c130531d620aaa3ee.jpg",
     "static/media/Logo.svg": "/scoot-website/static/media/Logo.034ffe428e789f2b5e9cd02af58c0ea4.svg",
     "static/media/ScooterIcon.svg": "/scoot-website/static/media/ScooterIcon.0dae6273a741b0babad059873fe407fd.svg",
@@ -29,10 +30,10 @@
     "static/media/Hamburger.svg": "/scoot-website/static/media/Hamburger.c918095adfed6e886a10eb981bc0131d.svg",
     "static/media/Circle.svg": "/scoot-website/static/media/Circle.f0df9f099504c337a445527503a18288.svg",
     "static/media/Line.svg": "/scoot-website/static/media/Line.2fa898a3c6c2a00310d7ebb62a710edc.svg",
-    "main.ca29d92f.js.map": "/scoot-website/static/js/main.ca29d92f.js.map",
+    "main.73cec3f8.js.map": "/scoot-website/static/js/main.73cec3f8.js.map",
     "787.6a0461b1.chunk.js.map": "/scoot-website/static/js/787.6a0461b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.ca29d92f.js"
+    "static/js/main.73cec3f8.js"
   ]
 }
