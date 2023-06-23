@@ -17,8 +17,8 @@ export const LogoAndMenu = ({ location }) => {
 
   useEffect(() => {
     isMenuOpen
-      ? (document.body.style.overflowY = "hidden")
-      : (document.body.style.overflowY = "auto");
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
   }, [isMenuOpen]);
 
   return (
