@@ -2,7 +2,6 @@ import Menu from "./Menu";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectIsMenuOpen, switchMenuState } from "../../menuSlice";
-import { NavLink } from "react-router-dom";
 import {
   LogoAndMenuWrapper,
   MenuButton,
@@ -32,9 +31,9 @@ export const LogoAndMenu = ({ location }) => {
       >
         {isMenuOpen ? <StyledCloseIcon /> : <StyledHamburger />}
       </MenuButton>
-      <NavLink to="/home">
+      <StyledNavLink to="/home">
         <StyledLogo location={location} />
-      </NavLink>
+      </StyledNavLink>
       <Menu location={location} />
     </LogoAndMenuWrapper>
   );
