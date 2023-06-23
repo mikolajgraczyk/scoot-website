@@ -1,9 +1,10 @@
-import { StyledTopBanner } from "./styled";
+import { StyledTopBanner, StyledWhiteCircles } from "./styled";
 
-const TopBanner = ({title}) => {
+const TopBanner = ({title, location}) => {
     return(
-        <StyledTopBanner>
+        <StyledTopBanner location={location}>
             {title}
+            <StyledWhiteCircles />
         </StyledTopBanner>
     );
 };

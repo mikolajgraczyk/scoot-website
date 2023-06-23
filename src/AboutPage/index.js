@@ -4,7 +4,7 @@ import TopBanner from "../common/TopBanner";
 const AboutPage = () => {
   return (
     <StyledAboutPage>
-      <TopBanner title={"About"} />
+      <TopBanner title={"About"} location={"about"} />
     </StyledAboutPage>
   );
 };
