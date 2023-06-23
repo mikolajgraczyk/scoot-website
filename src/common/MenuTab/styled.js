@@ -29,6 +29,7 @@ export const Tab = styled.div`
 
 export const Background = styled.div`
   display: none;
+  z-index: 1;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     display: block;

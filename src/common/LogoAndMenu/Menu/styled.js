@@ -14,6 +14,7 @@ export const StyledMenu = styled.nav`
       css`
         display: grid;
         gap: 16px;
+        text-align: center;
       `}
   }
 
@@ -31,6 +32,7 @@ export const StyledMenu = styled.nav`
 export const StyledNavLink = styled(NavLink)`
   background: none;
   border: none;
+  font-family: "Space Mono";
   padding: 0;
   font-weight: 700;
   font-size: 15px;

@@ -4,6 +4,7 @@ import MenuTab from "./common/MenuTab";
 import BottomSection from "./common/BottomSection";
 import AboutPage from "./AboutPage";
 import LocationsPage from "./LocationsPage";
+import CareersPage from "./CareersPage";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/locations" element={<LocationsPage />} />
+        <Route path="/careers" element={<CareersPage />} />
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>

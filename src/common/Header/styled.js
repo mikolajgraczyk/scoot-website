@@ -6,7 +6,6 @@ export const bpMobile = ({ theme }) => theme.breakpoint.mobile;
 export const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
-  font-family: "Space Mono";
 `;
 
 export const Wrapper = styled.div`
