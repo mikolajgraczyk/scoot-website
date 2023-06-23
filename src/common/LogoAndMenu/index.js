@@ -15,12 +15,10 @@ export const LogoAndMenu = ({ location }) => {
   const dispatch = useDispatch();
   const isMenuOpen = useSelector(selectIsMenuOpen);
 
-  let body = document.querySelector("body");
-
   useEffect(() => {
     isMenuOpen
-      ? (body.style.overflowY = "hidden")
-      : (body.style.overflowY = "auto");
+      ? (document.body.style.overflowY = "hidden")
+      : (document.body.style.overflowY = "auto");
   }, [isMenuOpen]);
 
   return (
