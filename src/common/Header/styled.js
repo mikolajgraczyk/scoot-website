@@ -9,20 +9,20 @@ export const StyledHeader = styled.header`
 `;
 
 export const Wrapper = styled.div`
-  padding: 22px 0;
+  max-width: 1440px;
+  width: 100%;
+  padding: 22px 165px 22px 169px;
   gap: 60px;
   display: flex;
-  max-width: 76.8%;
-  width: 100%;
   justify-content: space-between;
 
   @media (max-width: ${bpTablet}px) {
-    max-width: 89.7%;
+    padding: 22px 40px;
     gap: 20px;
   }
 
   @media (max-width: ${bpMobile}px) {
-    max-width: 90%;
+    padding: 22px 32px;
     justify-content: center;
   }
 `;

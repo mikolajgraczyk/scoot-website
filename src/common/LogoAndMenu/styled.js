@@ -12,7 +12,7 @@ export const LogoAndMenuWrapper = styled.div`
   gap: 30px;
   align-items: center;
   justify-content: space-between;
-  flex-basis: 400px;
+  flex-basis: 410px;
 
   @media (max-width: ${bpTablet}px) {
     gap: 10px;
