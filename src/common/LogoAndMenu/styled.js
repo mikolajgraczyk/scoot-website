@@ -60,6 +60,8 @@ export const StyledCloseIcon = styled(CloseIcon)`
 `;
 
 export const StyledLogo = styled(Logo)`
+  color: ${({ theme }) => theme.color.black};
+
   ${({ location }) =>
     location === "footer" &&
     css`

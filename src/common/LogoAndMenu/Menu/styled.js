@@ -37,6 +37,10 @@ export const StyledNavLink = styled(NavLink)`
   line-height: 25px;
   color: ${({ theme }) => theme.color.dimGrey};
 
+  &:link {
+    text-decoration: none;
+  }
+
   &:hover {
     color: ${({ theme }) => theme.color.yellow};
     cursor: pointer;
