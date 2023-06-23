@@ -11,17 +11,11 @@ import careersLocationHeroTablet from "./images/careers-locations-hero-tablet.jp
 import careersLocationHeroMobile from "./images/careers-location-hero-mobile.jpg";
 
 export const StyledTopBanner = styled.div`
-  height: 200px;
-  padding: 72px 165px;
-  color: ${({ theme }) => theme.color.white};
-  font-size: 56px;
-  font-family: Space Mono;
-  font-weight: 700;
-  line-height: 56px;
-  letter-spacing: -2.5px;
+  display: flex;
+  justify-content: center;
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 
   ${({ location }) =>
     location === "about" &&
@@ -50,12 +44,26 @@ export const StyledTopBanner = styled.div`
         background-image: url(${careersLocationHeroMobile});
       }
     `};
+`;
+
+export const Wrapper = styled.div`
+  max-width: 1440px;
+  width: 100%;
+  height: 200px;
+  padding: 72px 165px;
+  color: ${({ theme }) => theme.color.white};
+  font-size: 56px;
+  font-family: "Space Mono";
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2.5px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     padding: 72px 97px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 40px;
     padding: 60px 32px;
     text-align: center;
   }
