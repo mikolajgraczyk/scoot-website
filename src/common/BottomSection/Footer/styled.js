@@ -9,16 +9,16 @@ export const StyledFooter = styled.footer`
 export const Wrapper = styled.div`
   display: flex;
   max-width: 1440px;
-  padding: 36px 168px;
+  padding: 35px 165px 32px 168.6px;
   width: 100%;
   justify-content: space-between;
   gap: 60px;
 
-  @media(max-width: ${({theme}) => theme.breakpoint.tablet}px){
-    padding: 40px 36px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    padding: 35px 40px 32px 39.6px;
   }
 
-  @media(max-width: ${({theme}) => theme.breakpoint.mobile}px){
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     padding: 64px 134px 88px 134px;
     display: grid;
     justify-content: center;
