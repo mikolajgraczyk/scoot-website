@@ -9,10 +9,13 @@ const menuSlice = createSlice({
     switchMenuState: (state) => {
       state.menuState = !state.menuState;
     },
+    closeMenu: (state) => {
+      state.menuState = false;
+    },
   },
 });
 
-export const { switchMenuState } = menuSlice.actions;
+export const { switchMenuState, closeMenu } = menuSlice.actions;
 
 export const selectMenuState = (state) => state.menu;
 export const selectIsMenuOpen = (state) => selectMenuState(state).menuState;

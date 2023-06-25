@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 import { ReactComponent as Hamburger } from "./images/Hamburger.svg";
 import { ReactComponent as CloseIcon } from "./images/CloseIcon.svg";
 import { ReactComponent as Logo } from "./images/Logo.svg";
-import { NavLink } from "react-router-dom";
 
 const bpTablet = ({ theme }) => theme.breakpoint.tablet;
 const bpMobile = ({ theme }) => theme.breakpoint.mobile;
@@ -28,7 +27,7 @@ export const LogoAndMenuWrapper = styled.div`
   }
 `;
 
-export const MenuButton = styled.button`
+export const MenuSwitch = styled.button`
   display: none;
   position: absolute;
 
@@ -60,7 +59,11 @@ export const StyledCloseIcon = styled(CloseIcon)`
   position: absolute;
 `;
 
-export const StyledNavLink = styled(NavLink)`
+export const LogoButton = styled.button`
+  background: none;
+  border: none;
+  padding: 0;
+
   @media (max-width: ${bpMobile}px) {
     margin: 0 auto;
   }

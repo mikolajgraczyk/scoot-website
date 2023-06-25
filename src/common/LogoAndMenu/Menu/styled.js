@@ -58,3 +58,10 @@ export const StyledNavLink = styled(NavLink)`
       color: ${({ theme }) => theme.color.lightGrey};
     `}
 `;
+
+export const MenuButton = styled.button`
+  background: none;
+  padding: 0;
+  border: none;
+  text-align: left;
+`;
