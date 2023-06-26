@@ -39,6 +39,10 @@ export const StyledNavLink = styled(NavLink)`
   line-height: 25px;
   color: ${({ theme }) => theme.color.dimGrey};
 
+  &.active {
+    color: ${({ theme }) => theme.color.yellow};
+  }
+
   &:link {
     text-decoration: none;
   }
