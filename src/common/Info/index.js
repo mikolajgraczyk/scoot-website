@@ -1,24 +1,24 @@
 import {
-  StyledAbout,
+  StyledInfo,
   Circles,
   ImageCircle,
   StyledCircle,
-  StyledLeftAboutArrow,
-  StyledRightAboutArrow,
+  StyledLeftInfoArrow,
+  StyledRightInfoArrow,
 } from "./styled";
 import Content from "./Content";
 
-const Info = ({ title, description, image, leftDirection }) => {
+const Info = ({ title, description, image, location, leftDirection }) => {
   return (
-    <StyledAbout leftDirection={leftDirection}>
-      <Content title={title} description={description} />
+    <StyledInfo leftDirection={leftDirection}>
+      <Content title={title} description={description} location={location}/>
       <Circles leftDirection={leftDirection}>
         <ImageCircle src={image} alt="" />
         <StyledCircle />
-        <StyledLeftAboutArrow leftDirection={leftDirection} />
-        <StyledRightAboutArrow leftDirection={leftDirection} />
+        <StyledLeftInfoArrow leftDirection={leftDirection} />
+        <StyledRightInfoArrow leftDirection={leftDirection} />
       </Circles>
-    </StyledAbout>
+    </StyledInfo>
   );
 };
 

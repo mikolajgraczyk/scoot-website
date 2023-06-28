@@ -1,11 +1,11 @@
 import { StyledContent, Title, Description, Button } from "./styled";
 
-const Content = ({ title, description }) => {
+const Content = ({ title, description, location }) => {
   return (
     <StyledContent>
       <Title>{title}</Title>
       <Description>{description}</Description>
-      <Button>Learn more</Button>
+      {location === "subpage" ? "" : <Button>Learn more</Button>}
     </StyledContent>
   );
 };

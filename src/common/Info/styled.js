@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 
-import { ReactComponent as LeftAboutArrow } from "./images/LeftAboutArrow.svg";
-import { ReactComponent as RightAboutArrow } from "./images/RightAboutArrow.svg";
+import { ReactComponent as LeftInfoArrow } from "./images/LeftInfoArrow.svg";
+import { ReactComponent as RightInfoArrow } from "./images/RightInfoArrow.svg";
 import { ReactComponent as Circle } from "./images/Circle.svg";
 
-export const StyledAbout = styled.div`
+export const StyledInfo = styled.div`
   display: flex;
   justify-content: right;
   align-items: center;
@@ -85,7 +85,7 @@ export const StyledCircle = styled(Circle)`
   }
 `;
 
-export const StyledLeftAboutArrow = styled(LeftAboutArrow)`
+export const StyledLeftInfoArrow = styled(LeftInfoArrow)`
   position: absolute;
   top: 307px;
 
@@ -101,7 +101,7 @@ export const StyledLeftAboutArrow = styled(LeftAboutArrow)`
     `}
 `;
 
-export const StyledRightAboutArrow = styled(RightAboutArrow)`
+export const StyledRightInfoArrow = styled(RightInfoArrow)`
   position: absolute;
   display: none;
   left: 312px;
