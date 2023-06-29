@@ -4,6 +4,7 @@ import Info from "../common/Info";
 import { InfoSection } from "../common/InfoSection";
 import { Container } from "../common/Container";
 import joinus from "./images/join-us.jpg";
+import ValuesSection from "../common/ValuesSection";
 
 const CareersPage = () => {
   const location = "subpage";
@@ -22,6 +23,7 @@ const CareersPage = () => {
             location={"subpage"}
           />
         </InfoSection>
+        <ValuesSection title={"Our values"}/>
       </Container>
     </StyledCareersPage>
   );

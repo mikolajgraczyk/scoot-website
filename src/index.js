@@ -7,12 +7,14 @@ import { theme } from "./theme";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { GlobalStyle } from "./globalStyle";
+import { Normalize } from "styled-normalize";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <Normalize />
         <App />
       </ThemeProvider>
     </Provider>
