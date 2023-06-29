@@ -14,7 +14,7 @@ export const StyledMenu = styled.nav`
       css`
         display: grid;
         gap: 16px;
-        text-align: center;
+        justify-content: center;
       `}
   }
 
@@ -68,4 +68,10 @@ export const MenuButton = styled.button`
   padding: 0;
   border: none;
   text-align: left;
+
+  ${({ location }) =>
+      location === "footer" &&
+      css`
+        text-align: center;
+      `}
 `;

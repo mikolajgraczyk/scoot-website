@@ -11,17 +11,17 @@ const Menu = ({ location }) => {
 
   return (
     <StyledMenu location={location}>
-      <MenuButton onClick={switchMenu}>
+      <MenuButton onClick={switchMenu} location={location}>
         <StyledNavLink to="/about" location={location}>
           About
         </StyledNavLink>
       </MenuButton>
-      <MenuButton onClick={switchMenu}>
+      <MenuButton onClick={switchMenu} location={location}>
         <StyledNavLink to="/locations" location={location}>
           Location
         </StyledNavLink>
       </MenuButton>
-      <MenuButton onClick={switchMenu}>
+      <MenuButton onClick={switchMenu} location={location}>
         <StyledNavLink to="/careers" location={location}>
           Careers
         </StyledNavLink>
