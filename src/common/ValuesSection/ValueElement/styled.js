@@ -18,7 +18,7 @@ export const StyledTitle = styled.span`
   line-height: 28px;
   letter-spacing: -1.071px;
 
-  @media(max-width: ${({theme}) => theme.breakpoint.mobile}px){
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     margin-top: 64px;
   }
 `;
@@ -30,4 +30,21 @@ export const StyledDescription = styled.span`
   font-size: 15px;
   font-family: "Lexend Deca";
   line-height: 25px;
+`;
+
+export const OrangeCircle = styled.div`
+  width: 96px;
+  height: 96px;
+  border-radius: 96px;
+  background: ${({ theme }) => theme.color.yellow};
+  position: absolute;
+  margin-top: 200px;
+  color: ${({ theme }) => theme.color.darkNavy};
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

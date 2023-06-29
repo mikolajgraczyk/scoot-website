@@ -3,6 +3,7 @@ import {
   Image,
   StyledTitle,
   StyledDescription,
+  OrangeCircle,
 } from "./styled";
 
 const ValueElement = ({ image, title, description, number }) => {
@@ -11,6 +12,7 @@ const ValueElement = ({ image, title, description, number }) => {
       <Image src={image} />
       <StyledTitle>{title}</StyledTitle>
       <StyledDescription>{description}</StyledDescription>
+      <OrangeCircle>{number}</OrangeCircle>
     </StyledValueElement>
   );
 };
