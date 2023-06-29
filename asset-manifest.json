@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/scoot-website/static/js/main.0579b26c.js",
+    "main.js": "/scoot-website/static/js/main.3dd53903.js",
     "static/js/787.6a0461b1.chunk.js": "/scoot-website/static/js/787.6a0461b1.chunk.js",
     "static/media/posterImageDesktop.jpg": "/scoot-website/static/media/posterImageDesktop.17b79cd68702e7373336.jpg",
     "static/media/nearYou.jpg": "/scoot-website/static/media/nearYou.72d039db92d9e2a85d7b.jpg",
     "static/media/better-living.jpg": "/scoot-website/static/media/better-living.00bc33dbf93e434b175b.jpg",
+    "static/media/join-us.jpg": "/scoot-website/static/media/join-us.54c3b32e1e40732611fc.jpg",
     "static/media/posterImageTablet.jpg": "/scoot-website/static/media/posterImageTablet.9782fddf81b965c8a0b8.jpg",
     "static/media/payments.jpg": "/scoot-website/static/media/payments.85257289d103aea4f413.jpg",
     "static/media/digital-era.jpg": "/scoot-website/static/media/digital-era.ff7ef22982a778b84f29.jpg",
@@ -32,10 +33,10 @@
     "static/media/Hamburger.svg": "/scoot-website/static/media/Hamburger.c918095adfed6e886a10eb981bc0131d.svg",
     "static/media/Circle.svg": "/scoot-website/static/media/Circle.f0df9f099504c337a445527503a18288.svg",
     "static/media/Line.svg": "/scoot-website/static/media/Line.2fa898a3c6c2a00310d7ebb62a710edc.svg",
-    "main.0579b26c.js.map": "/scoot-website/static/js/main.0579b26c.js.map",
+    "main.3dd53903.js.map": "/scoot-website/static/js/main.3dd53903.js.map",
     "787.6a0461b1.chunk.js.map": "/scoot-website/static/js/787.6a0461b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.0579b26c.js"
+    "static/js/main.3dd53903.js"
   ]
 }
