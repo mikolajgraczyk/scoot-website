@@ -27,7 +27,16 @@ export const Question = styled.span`
 `;
 
 export const ExtendButton = styled.button`
-    float: right;
+  float: right;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const Answer = styled.div`
