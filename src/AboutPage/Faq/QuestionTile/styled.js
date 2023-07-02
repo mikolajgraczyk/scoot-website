@@ -12,6 +12,11 @@ export const StyledQuestionTile = styled.div`
   }
 `;
 
+export const TopWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
 export const Question = styled.span`
   font-size: 24px;
   font-weight: 700;

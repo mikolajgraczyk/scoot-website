@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyledQuestionTile, Question, ExtendButton, Answer } from "./styled";
+import { StyledQuestionTile, TopWrapper, Question, ExtendButton, Answer } from "./styled";
 import { ReactComponent as Extend } from "./images/Extend.svg";
 import { ReactComponent as Descend } from "./images/Descend.svg";
 
@@ -12,10 +12,12 @@ const QuestionTile = ({ question, answer }) => {
 
   return (
     <StyledQuestionTile>
-      <Question>{question}</Question>
-      <ExtendButton onClick={extendTheTile}>
-        {isExtended ? <Descend /> : <Extend />}
-      </ExtendButton>
+      <TopWrapper>
+        <Question>{question}</Question>
+        <ExtendButton onClick={extendTheTile}>
+          {isExtended ? <Descend /> : <Extend />}
+        </ExtendButton>
+      </TopWrapper>
       {isExtended ? <Answer>{answer}</Answer> : ""}
     </StyledQuestionTile>
   );
