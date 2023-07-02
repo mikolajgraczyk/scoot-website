@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/scoot-website/static/js/main.34efa477.js",
+    "main.js": "/scoot-website/static/js/main.bc945827.js",
     "static/js/787.6a0461b1.chunk.js": "/scoot-website/static/js/787.6a0461b1.chunk.js",
     "static/media/posterImageDesktop.jpg": "/scoot-website/static/media/posterImageDesktop.17b79cd68702e7373336.jpg",
     "static/media/nearYou.jpg": "/scoot-website/static/media/nearYou.72d039db92d9e2a85d7b.jpg",
@@ -34,12 +34,14 @@
     "static/media/RightInfoArrow.svg": "/scoot-website/static/media/RightInfoArrow.dd7044690c0469aff3644a134394d9a3.svg",
     "static/media/CloseIcon.svg": "/scoot-website/static/media/CloseIcon.e07d444d5c384a92d57126f7e2724926.svg",
     "static/media/Hamburger.svg": "/scoot-website/static/media/Hamburger.c918095adfed6e886a10eb981bc0131d.svg",
+    "static/media/Descend.svg": "/scoot-website/static/media/Descend.1ac42978c9e2edc1801ae7896004269d.svg",
+    "static/media/Extend.svg": "/scoot-website/static/media/Extend.c528f15af3b64d8ea81e082e0912d8d3.svg",
     "static/media/Circle.svg": "/scoot-website/static/media/Circle.f0df9f099504c337a445527503a18288.svg",
     "static/media/Line.svg": "/scoot-website/static/media/Line.2fa898a3c6c2a00310d7ebb62a710edc.svg",
-    "main.34efa477.js.map": "/scoot-website/static/js/main.34efa477.js.map",
+    "main.bc945827.js.map": "/scoot-website/static/js/main.bc945827.js.map",
     "787.6a0461b1.chunk.js.map": "/scoot-website/static/js/787.6a0461b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.34efa477.js"
+    "static/js/main.bc945827.js"
   ]
 }
