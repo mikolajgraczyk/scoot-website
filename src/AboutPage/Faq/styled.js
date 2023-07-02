@@ -2,12 +2,16 @@ import styled from "styled-components";
 
 export const StyledFaq = styled.div`
   max-width: 1110px;
-  margin: 120px auto 0;
+  margin: 120px auto 160px;
   text-align: center;
   font-family: "Space Mono";
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    margin: 120px auto 120px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-    margin: 145px auto 0;
+    margin: 145px auto 120px;
   }
 `;
 
