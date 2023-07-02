@@ -6,6 +6,7 @@ import Info from "../common/Info";
 import mobility from "./images/digital-era.jpg";
 import urban from "./images/better-living.jpg";
 import ValuesSection from "../common/ValuesSection";
+import Faq from "./Faq";
 
 const AboutPage = () => {
   const location = "subpage";
@@ -33,7 +34,8 @@ const AboutPage = () => {
             leftDirection
           />
         </InfoSection>
-        <ValuesSection title={"Why join us?"}/>
+        <ValuesSection title={"Why join us?"} />
+        <Faq />
       </Container>
     </StyledAboutPage>
   );
