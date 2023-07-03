@@ -11,6 +11,7 @@ export const StyledInfo = styled.div`
   justify-content: space-between;
   margin-right: -360px;
   width: 116.5%;
+  gap: 24px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     flex-direction: column-reverse;
