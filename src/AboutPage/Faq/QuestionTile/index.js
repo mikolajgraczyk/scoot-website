@@ -11,12 +11,10 @@ const QuestionTile = ({ question, answer }) => {
   };
 
   return (
-    <StyledQuestionTile>
+    <StyledQuestionTile onClick={extendTheTile}>
       <TopWrapper>
         <Question>{question}</Question>
-        <ExtendButton onClick={extendTheTile}>
           {isExtended ? <Descend /> : <Extend />}
-        </ExtendButton>
       </TopWrapper>
       {isExtended ? <Answer>{answer}</Answer> : ""}
     </StyledQuestionTile>
