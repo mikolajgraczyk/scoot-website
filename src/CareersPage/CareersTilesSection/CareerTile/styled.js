@@ -60,6 +60,13 @@ export const ApplyButton = styled.button`
   height: 53px;
   padding: 0;
 
+  &:hover{
+    cursor: pointer;
+    background: none;
+    color: ${({ theme }) => theme.color.yellow};
+    border: 3px solid ${({ theme }) => theme.color.yellow};
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     width: 100%;
   }
