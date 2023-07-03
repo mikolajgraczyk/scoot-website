@@ -7,6 +7,11 @@ export const StyledQuestionTile = styled.div`
   padding: 32px 40px;
   gap: 24px;
 
+  &:hover{
+    cursor: pointer;
+    background: ${({theme}) => theme.color.lightYellow};
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     padding: 32px;
   }
