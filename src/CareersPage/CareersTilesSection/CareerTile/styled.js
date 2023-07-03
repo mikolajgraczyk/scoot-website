@@ -8,6 +8,7 @@ export const StyledCareerTile = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     padding: 36px 32px 32px;
@@ -55,7 +56,7 @@ export const ApplyButton = styled.button`
   font-family: "Space Mono";
   font-weight: 700;
   line-height: 25px;
-  width: 180px;
+  min-width: 180px;
   height: 53px;
   padding: 0;
 
