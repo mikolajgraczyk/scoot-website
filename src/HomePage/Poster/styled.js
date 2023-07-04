@@ -117,6 +117,14 @@ export const Button = styled.button`
   white-space: nowrap;
   align-self: flex-start;
 
+  &:hover {
+    padding: 11px 36px;
+    color: ${({ theme }) => theme.color.yellow};
+    background: none;
+    cursor: pointer;
+    border: 3px solid ${({ theme }) => theme.color.yellow};
+  }
+
   @media (max-width: ${bpTablet}px) {
     align-self: center;
   }

@@ -19,8 +19,8 @@ export const StyledInstruction = styled.div`
     margin-top: 0;
     transform: translateY(-150%);
 
-    ${({ isInstructionInView }) =>
-      isInstructionInView &&
+    ${({ isLineInView }) =>
+      isLineInView &&
       css`
         transform: translateY(0px);
       `}
@@ -48,7 +48,8 @@ export const Line = styled.div`
     `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
-    display: none;
+    background: none;
+    top: 1050px;
   }
 
   @media (min-width: 1500px) {

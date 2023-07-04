@@ -12,15 +12,19 @@ import { useRef } from "react";
 
 const Instruction = () => {
   const instructionRef = useRef(null);
-  const lineRef = useRef(null)
+  const lineRef = useRef(null);
 
   const isInstructionInView = useInView(instructionRef, { once: true });
   const isLineInView = useInView(lineRef, { once: true });
 
   return (
     <>
-      <Line ref={lineRef} isLineInView={isLineInView}/>
-      <StyledInstruction ref={instructionRef} isInstructionInView={isInstructionInView}>
+      <Line ref={lineRef} isLineInView={isLineInView} />
+      <StyledInstruction
+        ref={instructionRef}
+        isLineInView={isLineInView}
+        isInstructionInView={isInstructionInView}
+      >
         <Wrapper>
           <InstructionElement
             icon={<StyledLocateIcon />}
