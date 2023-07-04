@@ -23,13 +23,13 @@ export const Tab = styled.div`
     height: 100vh;
     top: 64px;
     left: 0;
-    z-index: 1;
+    z-index: 2;
   }
 `;
 
 export const Background = styled.div`
   display: none;
-  z-index: 1;
+  z-index: 2;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     display: block;
