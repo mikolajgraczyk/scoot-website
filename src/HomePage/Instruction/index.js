@@ -6,6 +6,8 @@ import {
   StyledScooterIcon,
 } from "./styled";
 import InstructionElement from "./InstructionElement";
+import { useInView } from "keyframes";
+import { useRef } from "react";
 
 const Instruction = () => {
   return (

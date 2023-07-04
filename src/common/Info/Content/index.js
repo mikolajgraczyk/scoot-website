@@ -1,8 +1,8 @@
 import { StyledContent, Title, Description, Button } from "./styled";
 
-const Content = ({ title, description, location }) => {
+const Content = ({ title, description, location, leftDirection, isInView }) => {
   return (
-    <StyledContent>
+    <StyledContent leftDirection={leftDirection} isInView={isInView}>
       <Title>{title}</Title>
       <Description>{description}</Description>
       {location === "subpage" ? "" : <Button>Learn more</Button>}

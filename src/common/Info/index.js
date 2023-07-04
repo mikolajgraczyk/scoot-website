@@ -7,12 +7,23 @@ import {
   StyledRightInfoArrow,
 } from "./styled";
 import Content from "./Content";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Info = ({ title, description, image, location, leftDirection }) => {
+  const elementRef = useRef(null);
+  const isInView = useInView(elementRef, { once: true });
+
   return (
-    <StyledInfo leftDirection={leftDirection}>
-      <Content title={title} description={description} location={location}/>
-      <Circles leftDirection={leftDirection}>
+    <StyledInfo leftDirection={leftDirection} ref={elementRef}>
+      <Content
+        title={title}
+        description={description}
+        location={location}
+        leftDirection={leftDirection}
+        isInView={isInView}
+      />
+      <Circles leftDirection={leftDirection} isInView={isInView}>
         <ImageCircle src={image} alt="" />
         <StyledCircle />
         <StyledLeftInfoArrow leftDirection={leftDirection} />
@@ -20,6 +31,7 @@ const Info = ({ title, description, image, location, leftDirection }) => {
       </Circles>
     </StyledInfo>
   );
+
 };
 
 export default Info;

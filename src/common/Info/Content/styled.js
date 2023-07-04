@@ -1,13 +1,33 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledContent = styled.div`
   max-width: 445px;
   display: flex;
   flex-direction: column;
+  transition: cubic-bezier(0.17, 0.55, 0.55, 1) 1s;
+  transform: translateX(-500px);
+
+  ${({ isInView }) =>
+    isInView &&
+    css`
+      transform: translateX(0px);
+    `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     align-self: center;
   }
+
+  ${({ leftDirection }) =>
+    leftDirection &&
+    css`
+      transform: translateX(500px);
+
+      ${({ isInView }) =>
+        isInView &&
+        css`
+          transform: translateX(0px);
+        `}
+    `}
 `;
 
 export const Title = styled.span`
