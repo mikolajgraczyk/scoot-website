@@ -1,4 +1,5 @@
 import LogoAndMenu from "../LogoAndMenu";
+import MenuTab from "../MenuTab";
 import { StyledHeader, Wrapper, Button } from "./styled";
 
 const Header = () => {
@@ -8,6 +9,7 @@ const Header = () => {
         <LogoAndMenu />
         <Button>Get Scootin</Button>
       </Wrapper>
+      <MenuTab />
     </StyledHeader>
   );
 };

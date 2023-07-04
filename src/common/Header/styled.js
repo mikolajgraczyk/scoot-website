@@ -6,6 +6,10 @@ export const bpMobile = ({ theme }) => theme.breakpoint.mobile;
 export const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
+  background-color: ${({theme}) => theme.color.white};
+  position: sticky;
+  top: 0;
+  z-index: 4;
 `;
 
 export const Wrapper = styled.div`

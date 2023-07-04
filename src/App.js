@@ -1,6 +1,5 @@
 import Header from "./common/Header";
 import HomePage from "./HomePage";
-import MenuTab from "./common/MenuTab";
 import BottomSection from "./common/BottomSection";
 import AboutPage from "./AboutPage";
 import LocationsPage from "./LocationsPage";
@@ -11,7 +10,6 @@ function App() {
   return (
     <HashRouter>
       <Header />
-      <MenuTab />
       <Routes>
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
