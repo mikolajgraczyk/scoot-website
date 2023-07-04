@@ -16,11 +16,11 @@ export const StyledInfo = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     flex-direction: column-reverse;
     margin: 0;
+    gap: 56px;
     align-items: flex-end;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-    gap: 56px;
     width: 100%;
   }
 
