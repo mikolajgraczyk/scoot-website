@@ -17,6 +17,8 @@ export const StyledPoster = styled.div`
   background-size: cover;
   width: 100%;
   height: 650px;
+  position: relative;
+  z-index: 1;
   overflow: hidden;
 
   @media (max-width: ${bpTablet}px) {

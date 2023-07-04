@@ -1,4 +1,4 @@
-import { StyledHomepage, Line } from "./styled";
+import { StyledHomepage } from "./styled";
 import { Container } from "../common/Container";
 import { InfoSection } from "../common/InfoSection";
 import Poster from "./Poster";
@@ -13,7 +13,6 @@ const HomePage = () => {
     <StyledHomepage>
       <Poster />
       <Container>
-        <Line />
         <Instruction />
         <InfoSection location={"homepage"}>
           <Info
