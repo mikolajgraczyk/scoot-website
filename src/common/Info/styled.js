@@ -41,9 +41,11 @@ export const StyledInfo = styled.div`
 `;
 
 export const Circles = styled.div`
-  display: flex;
   gap: 64px;
+  display: flex;
   position: relative;
+  transform: translateX(500px);
+  transition: cubic-bezier(0.17, 0.55, 0.55, 1) 1s;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     align-self: center;
@@ -54,10 +56,17 @@ export const Circles = styled.div`
     margin: 0;
   }
 
+  ${({ isInView }) =>
+    isInView &&
+    css`
+      transform: translateX(0px);
+    `}
+
   ${({ leftDirection }) =>
     leftDirection &&
     css`
       flex-direction: row-reverse;
+      transform: translateX(-500px);
 
       @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
         margin-left: -1030px;
@@ -66,6 +75,12 @@ export const Circles = styled.div`
       @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         margin: 0;
       }
+
+      ${({ isInView }) =>
+        isInView &&
+        css`
+          transform: translateX(0px);
+        `}
     `}
 `;
 
