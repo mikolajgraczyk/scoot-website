@@ -9,6 +9,10 @@ export const StyledHeader = styled.header`
   position: sticky;
   top: 0;
   z-index: 4;
+  background-color: ${({ theme }) => theme.color.white};
+  -webkit-box-shadow: 0px -7px 27px -12px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px -7px 27px -12px rgba(66, 68, 90, 1);
+  box-shadow: 0px -7px 27px -12px rgba(66, 68, 90, 1);
 `;
 
 export const Wrapper = styled.div`
@@ -18,7 +22,7 @@ export const Wrapper = styled.div`
   gap: 60px;
   display: flex;
   justify-content: space-between;
-  background-color: ${({theme}) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.white};
   z-index: 5;
 
   @media (max-width: ${bpTablet}px) {
