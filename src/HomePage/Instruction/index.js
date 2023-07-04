@@ -14,8 +14,8 @@ const Instruction = () => {
   const instructionRef = useRef(null);
   const lineRef = useRef(null)
 
-  const isInstructionInView = useInView(instructionRef);
-  const isLineInView = useInView(lineRef);
+  const isInstructionInView = useInView(instructionRef, { once: true });
+  const isLineInView = useInView(lineRef, { once: true });
 
   return (
     <>
