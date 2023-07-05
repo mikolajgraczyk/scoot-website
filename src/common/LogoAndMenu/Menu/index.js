@@ -5,23 +5,27 @@ import { useDispatch } from "react-redux";
 const Menu = ({ location }) => {
   const dispatch = useDispatch();
 
-  const switchMenu = () => {
+  const onNavButtonClick = () => {
     dispatch(closeMenu());
+
+    window.scrollTo({
+      top: 0,
+    });
   };
 
   return (
     <StyledMenu location={location}>
-      <MenuButton onClick={switchMenu} location={location}>
+      <MenuButton onClick={onNavButtonClick} location={location}>
         <StyledNavLink to="/about" location={location}>
           About
         </StyledNavLink>
       </MenuButton>
-      <MenuButton onClick={switchMenu} location={location}>
+      <MenuButton onClick={onNavButtonClick} location={location}>
         <StyledNavLink to="/locations" location={location}>
           Location
         </StyledNavLink>
       </MenuButton>
-      <MenuButton onClick={switchMenu} location={location}>
+      <MenuButton onClick={onNavButtonClick} location={location}>
         <StyledNavLink to="/careers" location={location}>
           Careers
         </StyledNavLink>
