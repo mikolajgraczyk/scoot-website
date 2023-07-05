@@ -32,11 +32,14 @@ export const MenuSwitch = styled.button`
   position: absolute;
 
   @media (max-width: ${bpMobile}px) {
-    width: 19.69px;
-    height: 16px;
+    width: 90.69px;
+    height: 100%;
     border: none;
+    padding: 0;
+    left: 0; 
     display: flex;
     justify-content: center;
+    align-items: center;
     background: none;
 
     ${({ location }) =>
