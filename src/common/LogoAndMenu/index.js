@@ -21,9 +21,14 @@ export const LogoAndMenu = ({ location }) => {
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "auto");
   }, [isMenuOpen]);
-
-  const switchMenu = () => {
+  
+  const onLogoClick = () => {
     dispatch(closeMenu());
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -34,12 +39,12 @@ export const LogoAndMenu = ({ location }) => {
       >
         {isMenuOpen ? <StyledCloseIcon /> : <StyledHamburger />}
       </MenuSwitch>
-      <LogoButton onClick={switchMenu}>
+      <LogoButton onClick={onLogoClick}>
         <NavLink to="/home">
           <StyledLogo location={location} />
         </NavLink>
       </LogoButton>
-      <Menu location={location} />
+      <Menu location={location}/>
     </LogoAndMenuWrapper>
   );
 };
