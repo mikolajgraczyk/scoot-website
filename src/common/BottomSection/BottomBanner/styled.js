@@ -59,6 +59,7 @@ export const FooterBannerText = styled.span`
 export const MobileStoreButtons = styled.div`
   display: flex;
   gap: 18px;
+  z-index: 1;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     justify-content: center;
@@ -70,8 +71,12 @@ export const StoreButton = styled.button`
   padding: 0;
   display: flex;
   justify-content: center;
-  border-radius: 4px;
+  background: none;
   border: none;
+
+  &:hover{
+    cursor: pointer;
+  }
 `;
 
 export const StyledAppStore = styled(AppStore)`

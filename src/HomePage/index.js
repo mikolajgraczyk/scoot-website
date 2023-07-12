@@ -28,7 +28,7 @@ const HomePage = () => {
             description={
               "Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year."
             }
-            leftDirection
+            leftdirection={"true"}
           />
           <Info
             image={payments}

@@ -31,7 +31,7 @@ const AboutPage = () => {
               "We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride."
             }
             location={location}
-            leftDirection
+            leftdirection={"true"}
           />
         </InfoSection>
         <ValuesSection title={"Why join us?"} />

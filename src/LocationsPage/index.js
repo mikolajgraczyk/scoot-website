@@ -1,19 +1,41 @@
-import { StyledLocationPage, WorldMap } from "./styled";
+import { useState, useEffect } from "react";
+import { StyledLocationPage, WorldMap, MapImage } from "./styled";
 import TopBanner from "../common/TopBanner";
 import { Container } from "../common/Container";
-import LocationBubble from "./LocationBubble";
 import AdditionalInfo from "./AdditionalInfo";
+import worldMapDesktop from "./images/world-map-desktop.png";
+import worldMapTablet from "./images/world-map-tablet.png";
+import worldMapMobile from "./images/world-map-mobile.png";
 
 const LocationsPage = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScreenWidth(window.innerWidth);
+    });
+  }, []);
+
+  let screenType;
+
+  switch (true) {
+    case screenWidth > 1200:
+      screenType = worldMapDesktop;
+      break;
+    case screenWidth > 590:
+      screenType = worldMapTablet;
+      break;
+    default:
+      screenType = worldMapMobile;
+      break;
+  }
+
   return (
     <StyledLocationPage>
       <TopBanner title={"Locations"} location={"locations"} />
       <Container>
         <WorldMap>
-          {/* <LocationBubble cityName={"London"} />
-          <LocationBubble cityName={"New York"} />
-          <LocationBubble cityName={"Yokohama"} />
-          <LocationBubble cityName={"Jakarta"} /> */}
+          <MapImage src={screenType} alt=""/>
         </WorldMap>
         <AdditionalInfo />
       </Container>

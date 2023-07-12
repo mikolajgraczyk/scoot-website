@@ -10,24 +10,24 @@ import Content from "./Content";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-const Info = ({ title, description, image, location, leftDirection }) => {
+const Info = ({ title, description, image, location, leftdirection }) => {
   const elementRef = useRef(null);
   const isInView = useInView(elementRef, { once: true });
 
   return (
-    <StyledInfo leftDirection={leftDirection} ref={elementRef}>
+    <StyledInfo leftdirection={leftdirection} ref={elementRef}>
       <Content
         title={title}
         description={description}
         location={location}
-        leftDirection={leftDirection}
+        leftdirection={leftdirection}
         isInView={isInView}
       />
-      <Circles leftDirection={leftDirection} isInView={isInView}>
+      <Circles leftdirection={leftdirection} isInView={isInView}>
         <ImageCircle src={image} alt="" />
         <StyledCircle />
-        <StyledLeftInfoArrow leftDirection={leftDirection} />
-        <StyledRightInfoArrow leftDirection={leftDirection} />
+        <StyledLeftInfoArrow leftdirection={leftdirection} />
+        <StyledRightInfoArrow leftdirection={leftdirection} />
       </Circles>
     </StyledInfo>
   );

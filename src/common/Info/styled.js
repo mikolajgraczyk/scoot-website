@@ -24,8 +24,8 @@ export const StyledInfo = styled.div`
     width: 100%;
   }
 
-  ${({ leftDirection }) =>
-    leftDirection &&
+  ${({ leftdirection }) =>
+    leftdirection &&
     css`
       flex-direction: row-reverse;
       justify-content: left;
@@ -62,8 +62,8 @@ export const Circles = styled.div`
       transform: translateX(0px);
     `}
 
-  ${({ leftDirection }) =>
-    leftDirection &&
+  ${({ leftdirection }) =>
+    leftdirection &&
     css`
       flex-direction: row-reverse;
       transform: translateX(-500px);
@@ -110,8 +110,8 @@ export const StyledLeftInfoArrow = styled(LeftInfoArrow)`
     left: 0px;
   }
 
-  ${({ leftDirection }) =>
-    leftDirection &&
+  ${({ leftdirection }) =>
+    leftdirection &&
     css`
       display: none;
     `}
@@ -126,8 +126,8 @@ export const StyledRightInfoArrow = styled(RightInfoArrow)`
     left: -220px;
   }
 
-  ${({ leftDirection }) =>
-    leftDirection &&
+  ${({ leftdirection }) =>
+    leftdirection &&
     css`
       display: block;
     `}
