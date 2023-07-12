@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
-import { StyledLocationPage, WorldMap, MapImage } from "./styled";
+import {
+  StyledLocationPage,
+  WorldMap,
+  MapImage,
+  CitiesList,
+  CityTile,
+} from "./styled";
 import TopBanner from "../common/TopBanner";
 import { Container } from "../common/Container";
 import AdditionalInfo from "./AdditionalInfo";
@@ -35,8 +41,14 @@ const LocationsPage = () => {
       <TopBanner title={"Locations"} location={"locations"} />
       <Container>
         <WorldMap>
-          <MapImage src={screenType} alt=""/>
+          <MapImage src={screenType} alt="" />
         </WorldMap>
+        <CitiesList>
+          <CityTile>New York</CityTile>
+          <CityTile>London</CityTile>
+          <CityTile>Jakarta</CityTile>
+          <CityTile>Yokohama</CityTile>
+        </CitiesList>
         <AdditionalInfo />
       </Container>
     </StyledLocationPage>
