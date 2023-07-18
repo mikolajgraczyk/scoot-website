@@ -1,3 +1,3 @@
 ## Development in progress...
 
-## [Demo](https://mikolajgraczyk.github.io/scoot-website/)
+## [Current Demo](https://mikolajgraczyk.github.io/scoot-website/)
