@@ -13,7 +13,7 @@ export const Tab = styled.div`
     position: absolute;
     background: ${({ theme }) => theme.color.brightGrey};
     width: 68%;
-    height: calc(100svh - 64px);
+    height: calc(100dvh - 64px);
     top: 64px;
     left: 0;
     transition: cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s;
