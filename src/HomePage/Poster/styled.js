@@ -158,7 +158,7 @@ export const StyledLine = styled(Line)`
 `;
 
 export const StyledWhiteCircles = styled(WhiteCircles)`
-  margin-top: 128px;
+  margin-top: 120px;
   margin-right: -48px;
   justify-self: right;
 
