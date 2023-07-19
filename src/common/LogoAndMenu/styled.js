@@ -73,7 +73,7 @@ export const LogoButton = styled.button`
 `;
 
 export const StyledLogo = styled(Logo)`
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.darkNavy};
 
   ${({ location }) =>
     location === "footer" &&
