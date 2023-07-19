@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/scoot-website/static/js/main.3e4ca789.js",
+    "main.js": "/scoot-website/static/js/main.bbb8b3af.js",
     "static/js/787.6a0461b1.chunk.js": "/scoot-website/static/js/787.6a0461b1.chunk.js",
     "static/media/world-map-desktop.png": "/scoot-website/static/media/world-map-desktop.458c9e4a45a9f753cffc.png",
     "static/media/world-map-tablet.png": "/scoot-website/static/media/world-map-tablet.7684dc7d76e7be487b3d.png",
@@ -41,10 +41,10 @@
     "static/media/Extend.svg": "/scoot-website/static/media/Extend.c528f15af3b64d8ea81e082e0912d8d3.svg",
     "static/media/Circle.svg": "/scoot-website/static/media/Circle.f0df9f099504c337a445527503a18288.svg",
     "static/media/Line.svg": "/scoot-website/static/media/Line.2fa898a3c6c2a00310d7ebb62a710edc.svg",
-    "main.3e4ca789.js.map": "/scoot-website/static/js/main.3e4ca789.js.map",
+    "main.bbb8b3af.js.map": "/scoot-website/static/js/main.bbb8b3af.js.map",
     "787.6a0461b1.chunk.js.map": "/scoot-website/static/js/787.6a0461b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3e4ca789.js"
+    "static/js/main.bbb8b3af.js"
   ]
 }
