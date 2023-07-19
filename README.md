@@ -6,7 +6,7 @@
 ## Demo
 https://mikolajgraczyk.github.io/scoot-website/#/home
 
-![example]([https://github.com/mikolajgraczyk/tip-calculator-app/blob/main/public/demo.gif?raw=true](https://github.com/mikolajgraczyk/scoot-website/blob/main/public/gif.gif?raw=true))
+![example](https://github.com/mikolajgraczyk/scoot-website/blob/main/public/gif.gif?raw=true)
 
 ## Technologies used in project
 - HTML
