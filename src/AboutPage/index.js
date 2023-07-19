@@ -9,11 +9,11 @@ import ValuesSection from "../common/ValuesSection";
 import Faq from "./Faq";
 
 const AboutPage = () => {
-  const location = "subpage";
+  const location = "about";
 
   return (
     <StyledAboutPage>
-      <TopBanner title={"About"} location={"about"} />
+      <TopBanner title={"About"} location={location} />
       <Container>
         <InfoSection location={location}>
           <Info

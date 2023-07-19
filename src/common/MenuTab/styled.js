@@ -7,12 +7,13 @@ export const Tab = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     transform: translateX(-100%);
     display: flex;
-    justify-content: center;
-    padding: 64px 0 24px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 64px 32px 24px 32px;
     position: absolute;
     background: ${({ theme }) => theme.color.brightGrey};
     width: 68%;
-    height: 100vh;
+    height: calc(100vh - 64px);
     top: 64px;
     left: 0;
     transition: cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s;
@@ -23,6 +24,18 @@ export const Tab = styled.div`
         transform: translateX(0px);
       `}
   }
+`;
+
+export const Button = styled.button`
+  background: ${({ theme }) => theme.color.yellow};
+  color: ${({ theme }) => theme.color.white};
+  padding: 14px 0;
+  border: none;
+  font-family: "Space Mono";
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
 `;
 
 export const Background = styled.div`

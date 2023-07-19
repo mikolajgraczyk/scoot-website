@@ -22,6 +22,7 @@ const CareersPage = () => {
               "We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!"
             }
             location={"subpage"}
+            buttonText={"Say Hello"}
           />
         </InfoSection>
         <ValuesSection title={"Our values"}/>
