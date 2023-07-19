@@ -6,6 +6,8 @@
 ## Demo
 https://mikolajgraczyk.github.io/scoot-website/#/home
 
+![example](https://github.com/mikolajgraczyk/scoot-website/blob/main/public/gif.gif?raw=true)
+
 ## Technologies used in project
 - HTML
 - CSS
