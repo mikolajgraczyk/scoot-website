@@ -1,29 +1,15 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 import { ReactComponent as LocateIcon } from "./images/LocateIcon.svg";
 import { ReactComponent as RideIcon } from "./images/RideIcon.svg";
 import { ReactComponent as ScooterIcon } from "./images/ScooterIcon.svg";
 
-export const StyledInstruction = styled.div`
+export const StyledInstruction = styled(motion.div)`
   margin-top: 160px;
-  transition: cubic-bezier(0.17, 0.55, 0.55, 1) 1s;
-  transform: translateX(-80%);
-
-  ${({ isInstructionInView }) =>
-    isInstructionInView &&
-    css`
-      transform: translateX(0px);
-    `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     margin-top: 0;
-    transform: translateY(-150%);
-
-    ${({ isLineInView }) =>
-      isLineInView &&
-      css`
-        transform: translateY(0px);
-      `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -31,21 +17,13 @@ export const StyledInstruction = styled.div`
   }
 `;
 
-export const Line = styled.div`
+export const Line = styled(motion.div)`
   height: 15px;
   width: 70%;
   background: ${({ theme }) => theme.color.lightGrey};
   position: absolute;
   left: 0;
   top: 948px;
-  transition: cubic-bezier(0.17, 0.55, 0.55, 1) 1s;
-  transform: translateX(-80%);
-
-  ${({ isLineInView }) =>
-    isLineInView &&
-    css`
-      transform: translateX(0px);
-    `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     background: none;

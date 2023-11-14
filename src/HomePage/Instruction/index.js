@@ -7,24 +7,11 @@ import {
   StyledScooterIcon,
 } from "./styled";
 import InstructionElement from "./InstructionElement";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
-
 const Instruction = () => {
-  const instructionRef = useRef(null);
-  const lineRef = useRef(null);
-
-  const isInstructionInView = useInView(instructionRef, { once: true });
-  const isLineInView = useInView(lineRef, { once: true });
-
   return (
     <>
-      <Line ref={lineRef} isLineInView={isLineInView} />
-      <StyledInstruction
-        ref={instructionRef}
-        isLineInView={isLineInView}
-        isInstructionInView={isInstructionInView}
-      >
+      <Line initial={{ x: `-100vw` }} animate={{ x: 0 }} />
+      <StyledInstruction initial={{ x: `-100vw` }} animate={{ x: 0 }}>
         <Wrapper>
           <InstructionElement
             icon={<StyledLocateIcon />}
